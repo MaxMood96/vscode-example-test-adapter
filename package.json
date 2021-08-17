@@ -34,7 +34,7 @@
   "dependencies": {
     "tslib": "^1.9.3",
     "vscode-test-adapter-api": "^1.7.0",
-    "vscode-test-adapter-util": "^0.7.0"
+    "vscode-test-adapter-util": "^0.7.1"
   },
   "devDependencies": {
     "@types/vscode": "~1.23.0",
