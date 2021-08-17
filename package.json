@@ -29,17 +29,20 @@
     "watch": "tsc -w",
     "rebuild": "npm run clean && npm run build",
     "package": "vsce package",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "tslib": "^1.9.3",
     "vscode-test-adapter-api": "^1.7.0",
-    "vscode-test-adapter-util": "^0.7.0"
+    "vscode-test-adapter-util": "^0.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/vscode": "~1.23.0",
     "typescript": "^3.5.3",
-    "vsce": "^1.65.0"
+    "vsce": "^1.88.0"
   },
   "engines": {
     "vscode": "^1.23.0"
@@ -67,5 +70,6 @@
         }
       }
     }
-  }
+  },
+  "snyk": true
 }
